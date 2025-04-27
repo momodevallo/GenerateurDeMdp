@@ -44,7 +44,7 @@ function copyPasswordToClipboard() {
 
 // Gestion du clic sur le bouton générer
 generateBtn.addEventListener('click', () => {
-    const length = parseInt(lengthInput.value) || 12;  // Valeur par défaut = 12
+    const length = parseInt(lengthInput.value) || 8;  // Valeur par défaut = 12
     const generatedPassword = generatePassword(length);
     const passwordStrength = checkPasswordStrength(generatedPassword);
 
